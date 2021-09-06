@@ -1,0 +1,40 @@
+{
+  "name": "maistorserver",
+  "version": "1.0.0",
+  "description": "Server for Maistor Website",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "npx env-cmd -f ./config/dev.env nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stelian96/server.git"
+  },
+  "keywords": [
+    "server",
+    "nodejs"
+  ],
+  "author": "Stelian Tsankov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stelian96/server/issues"
+  },
+  "homepage": "https://github.com/stelian96/server#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.6.3",
+    "mongoose": "^5.11.14",
+    "multer": "^1.4.2",
+    "nodemailer": "^6.4.18",
+    "sharp": "^0.27.1",
+    "validator": "^13.5.2"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0",
+    "nodemon": "^2.0.7"
+  }
+}
